@@ -744,7 +744,6 @@
 		}
 		mlll.innerHTML = '"' + ml1.children[0].innerHTML + '"';
 	}
-	console.log(mlll);
 	ml2.onclick = function(){
 		var duigou = document.createElement("img");
 		duigou.setAttribute("src", "image/web-8/duigou.png");
@@ -819,20 +818,20 @@
 		img2.style.display='none';
  	}
  	//滚动距离
- 	function getScrollTop(){
- 	 	var scrollTop=0; 	
- 	 	if(document.documentElement&&document.documentElement.scrollTop){
- 	 	 		scrollTop=document.documentElement.scrollTop; 	
- 	 	}else if(document.body){
- 	 	 		scrollTop=document.body.scrollTop;
- 	 	} 	
- 	 	return scrollTop; 
- 	 } 
+ 	// function getScrollTop(){
+ 	//  	var scrollTop=0; 	
+ 	//  	if(document.documentElement&&document.documentElement.scrollTop){
+ 	//  	 		scrollTop=document.documentElement.scrollTop; 	
+ 	//  	}else if(document.body){
+ 	//  	 		scrollTop=document.body.scrollTop;
+ 	//  	} 	
+ 	//  	return scrollTop; 
+ 	//  } 
     shangpin.onmousemove=function(ev){
 		var ev=ev||event;
-		console.log(getScrollTop());
+		var st = document.documentElement.scrollTop || document.body.scrollTop;
 		var oL=ev.clientX-(maincenter1.offsetLeft + 20) -slider.offsetWidth/2;
-		var oT=ev.clientY-(maincenter1.offsetTop - getScrollTop() + 20) -slider.offsetHeight/2;
+		var oT=ev.clientY-(maincenter1.offsetTop - st + 20) -slider.offsetHeight/2;
 		  
 		var oMaxw=shangpin.offsetWidth-slider.offsetWidth;
 		var oMaxh=shangpin.offsetHeight-slider.offsetHeight;
