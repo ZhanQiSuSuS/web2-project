@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web-project</title>
+	<style>
+		* {
+	    	padding: 0;
+	    	margin: 0;
+	    }
+	    ul,li,ol {
+	    	list-style: none;
+	    }
+	    a {
+	    	text-decoration: none;
+	    }
+		#up{
+			width: 100%;
+			background-color: #ffffff;
+			height: 132px;
+		}
+		#main{
+			width: 100%;
+			background-color: #f8f7f6;
+			height: 920px;
+		}
+		#upcenter{
+			width: 1180px;
+			height: 170px;
+			margin: 0 auto;
+		}
+		#upcenter1{
+			width: 1180px;
+			height: 43px;
+			margin: 0 auto;
+		}
+		#upcenter1 a{
+			font-size: 12px;
+			color: #9a9791;
+			float: left;
+			margin-top: 7px;
+		}
+		#upcenter1 ul{
+			font-size: 12px;
+			color: #9a9791;
+			float: left;
+			margin-left: 362px;
+		}
+		#upcenter1 li{
+			font-size: 12px;
+			color: #9a9791;
+			float: left;
+			margin-left: 18px;
+		}
+		#QQimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -31px;
+		}
+		#wechatimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -53px;
+		}
+		#weiboimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -75px;
+		}
+		#messageimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -114px;
+		}
+		#count{
+			color:#fe6c00;
+			font-size: 12px;
+			margin-top: 7px;
+			font-weight: bolder;
+			float: left;
+			margin-left: 3px
+		}
+		#upcenter2{
+			width: 1180px;
+			height: 90px;
+			margin: 0 auto;
+		}
+		#upcenter21{
+			width: 250px;
+			height: 86px;
+			float: left;
+		}
+		#searchform{
+			width: 500px;
+			height: 36px;
+			border: 3px solid #fe6c00;
+			float: left;
+			color: #74736d;
+			margin-top: 15px;
+		}
+		#upcenter22{
+			width: 600px;
+			height: 86px;
+			float: left;
+		}
+		#upcenter22 li{
+			float: left;
+			font-size: 13px;
+			margin-left: 7px;
+			padding-right: 7px;
+			margin-top: 11px;
+			border-right: 1px solid #e6e5e2;
+		}
+		#upcenter23{
+			height: 86px;
+			width: 330px;
+			float: left;
+		}
+		.a05051{
+			margin-top: 15px;
+			width: 82px;
+			height: 40px;
+			margin-left: 73px;
+			border: 1px solid #e6e5e2;
+			float: left;
+		}
+		#erji{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-top: 6px;
+			margin-left: 31px;
+			background: url('image/web-8/common_min.png') 0 -97px;
+		}
+		.a05052{
+			margin-top: 15px;
+			width: 85px;
+			height: 40px;
+			border: 1px solid #e6e5e2;
+			float: left;
+		}
+		#xinfeng{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-top: 6px;
+			margin-left: 31px;
+			background: url('image/web-8/common_min.png') 0 -115px;
+		}
+		#a05053{
+			margin-top: 15px;
+			width: 81px;
+			height: 40px;
+			margin-right: 1px;
+			border: 1px solid #e6e5e2;
+			background-color: #ff4d04;
+			float: left;
+		}
+		#a05053 a{
+			float: left;
+			font-size: 14px;
+			color: #fff;
+			margin-top: 13px;
+			margin-left: 2px;
+		}
+		#yiwen{
+			width: 19px;
+			height: 17px;
+			float: left;
+			background: url('image/web-8/common_min.png') 0 -131px;
+		}
+		#gcblack{
+			width: 100%;
+			height: 40px;
+			background-color: black;
+		}
+		#gcblackcenter{
+			margin: 0 auto;
+			height: 40px;
+			width: 1180px;
+		}
+		#gcblackcenter li{
+			float: left;
+			color: #fff;
+			padding: 11px 30px;
+			font-size: 14px;
+			cursor:pointer;
+		}
+		#gcblackcenter li:hover{
+			background-color: #fe0d4a;
+		}
+		#gcblackcenter img{
+			margin-left: 130px;
+		}
+		#main{
+			height: 777px;
+			width: 100%;
+			background-color: #f6f5f4;
+		}
+		#maincenter{
+			height: 777px;
+			width: 1180px;
+			margin: 0 auto;
+		}
+		#mulu{
+			height: 40px;
+			width: 1180px;
+			margin: 0 auto;
+			background-color: #f6f5f4;
+		}
+		#mulu p{
+			font-size: 14px;
+			line-height: 40px;
+		}
+		#maincenter1{
+			width: 955px;
+			height: 592px;
+			float: left;
+			margin-right: 5px;
+			padding: 20px;
+			position:relative;
+			background-color: #fff;
+		}
+		#maincenter2{
+			width: 180px;
+			height: 632px;
+			float: left;
+			background-color: #fff;
+		}
+		#shangpinya{
+			width: 410px;
+			height: 410px;
+			margin-right: 18px;
+			float: left;
+		}
+		#xuanzhong1{
+			border: 2px solid #ff9003;
+		}
+		#shangpin{
+			width: 408px;
+			height: 408px;
+			border: 1px solid #f6f5f4;
+			margin-bottom: 3px;
+		}
+
+		#spanr{
+			margin-left: 232px;
+		}
+		#biaoti{
+			font-size: 18px;
+		}
+		.zhengwen{
+			font-size: 13px;
+			color: #676660;
+			margin-top: 12px;
+		}
+		#smallkuang{
+			width: 500px;
+			height: 42px;
+			float: left;
+			background-color: #f7f6f5;
+		}
+		#jinghanliang{
+			float: left;
+			margin-top: 2px;
+			margin-left: 26px;
+			margin-right: 23px;
+			font-size: 12px;
+		}
+		#ml1{
+			width: 60px;
+			height: 28px;
+			float: left;
+			border: 1px solid #fe0d4a;
+			position: relative;
+			cursor:pointer;
+		}
+		#ml1 img{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+		#ml2{
+			width: 60px;
+			height: 28px;
+			float: left;
+			cursor:pointer;
+			position: relative;
+		}
+		#he123{
+			width: 500px;
+			height: 40px;
+			float: left;
+			margin-top: 20px;
+		}
+		#counttt{
+			float: left;
+			margin-top: 5px;
+			margin-left: 26px;
+			margin-right: 23px;
+			font-size: 12px;
+		}
+		#fuhao1{
+			float: left;
+			width: 30px;
+			height: 30px;
+			border: 1px solid #cecbc5;
+			margin-left: 30px;
+			text-align: center;
+			line-height: 30px;
+			cursor:pointer;
+		}
+		#fuhao2{
+			float: left;
+			width: 30px;
+			height: 30px;
+			border: 1px solid #cecbc5;
+			text-align: center;
+			line-height: 30px;
+			cursor:pointer;
+		}
+		#countt{
+			border: 1px solid #cecbc5;
+			float: left;
+			width: 60px;
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+		}
+		#goumai{
+			width: 150px;
+			height: 40px;
+			float: left;
+			border-radius: 5px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 40px;
+			color: #ff0754;
+			border: 1px solid #ff0754;
+			cursor: pointer;
+		}
+		#gouwuche{
+			width: 150px;
+			height: 40px;
+			float: left;
+			font-size: 16px;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 5px;
+			margin-left: 20px;
+			color: #fff;
+			cursor: pointer;
+			background-color: #ff0754; 
+		}
+		#down{
+			width: 100%;
+			height: 345px;
+			background-color: #f8f7f6;
+		}
+		#downcenter{
+			margin: 0 auto;
+			width: 1180px;
+			height: 364px;
+		}
+		#downcenter1{
+			width: 1180px;
+			height: 180px;
+			float: left;
+			border-bottom: 1px solid #d0cdc7;
+		}
+		#downcenter2{
+			width: 1180px;
+			height: 183px;
+			float: left;
+		}
+		.zhinan{
+			float: left;
+			margin-top: 31px;
+			margin-left: 60px;
+
+		}
+		.zhinan li{
+			font-size: 12px;
+			margin-bottom: 14px;
+			color: #666560;
+			cursor: pointer;
+		}
+		#downcenter2 p{
+			float: left;
+			margin-top: 13px;
+			font-size: 12px;
+			color: #9a9791;
+		}
+		#p1{
+			margin-left: 345px;
+			margin-right: 345px;
+		}
+		#p2{
+			margin-left: 57px;
+			margin-right: 57px;
+		}
+		#p3{
+			margin-left: 521px;
+			margin-right: 521px;
+		}
+		#guanyu li{
+			float: left;
+			text-align: center;
+			padding: 0 13px;
+			border-right: 1px solid #d0cdc7;
+			font-size: 12px;
+			color: #666560;
+		}
+		#guanyu{
+			margin-left: 245px;
+			margin-top: 18px;
+		}
+		#downcenter2 img{
+			margin-top: 13px;
+		}
+		#tu111{
+			margin-left: 200px;
+		}
+		#back{
+			width: 100%;
+			height: 700px;
+			top: 0;
+			left: 0;
+			background-color: #d1cfcb;
+			opacity: 0.7;
+			position: fixed;
+			display: none;
+		}
+		#tanchuang{
+			width: 400px;
+			height: 200px;
+			position: fixed;
+			top: 150px;
+			left: 400px;
+			border: 2px solid #9690b3;
+			background-color: #fff;
+			display: none;
+		}
+		#jixugouwu{
+			width: 150px;
+			height: 40px;
+			float: left;
+			border-radius: 5px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 40px;
+			margin-left: 30px;
+			color: #ff0754;
+			cursor: pointer;
+			border: 1px solid #ff0754;
+		}
+		#jiesuan{
+			width: 150px;
+			height: 40px;
+			float: left;
+			font-size: 16px;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 5px;
+			margin-left: 20px;
+			color: #fff;
+			cursor: pointer;
+			background-color: #ff0754; 
+		}
+		#dashangpin{
+			width: 408px;
+			height: 408px;
+			display: none;
+			float: left;
+			position: absolute;
+			top: 20px;
+			border: 1px solid #f6f5f4;
+			left: 430px;
+			overflow:hidden;
+		}
+		#img2{
+			position:absolute;
+			right:0;top:0;
+			display:none; 
+			width:800px;
+			height:800px;
+			z-index: 10;
+		}
+		#slider{
+			width:150px;
+			height:150px;
+			position:absolute;
+			left:0;
+			top:0;
+			background:#CCC;
+			opacity:0.4;
+			cursor: move;
+			display:none; 
+			filter:alpha(opacity=40);}
+	</style>
+</head>
+<body>
+	<div id = "up">
+		<div id = "upcenter">
+			<div id = "upcenter1">
+				<a>帮5买，享帮帮</a>
+				<ul>
+					<li>
+						<a id="QQimg" href="#"></a>
+					</li>
+					<li>
+						<a id="wechatimg" href="#"></a>
+					</li>
+					<li>
+						<a id="weiboimg" href="#"></a>
+					</li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+					<li><a id="messageimg" href="#"></a><a href="#" style="margin-left:3px;">消息</a></li>
+					<li><a href="#"><img src="image/web-8/dingdan.jpg" alt=""></a><a href="#" style="margin-left:3px;">我的订单</a></li>
+					<li><a href="#">我的收藏</a></li>
+					<li><a href="#">帮钻兑换</a></li>
+					<li><a href="#"><img src="image/web-8/tp-my-phone.png" alt=""></a><a href="#" style="margin-left:3px;">手机版</a></li>
+					<li><a href="#">帮5淘</a></li>
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#"><img src="image/web-8/gouwuche.jpg" alt=""></a><a href="#" style="margin-left:3px;">购物车</a><span id = "count">0</span></li>
+				</ul>
+			</div>
+			<div id = "upcenter2">
+				<div id = "upcenter21"><img src="image/web-8/logo_03.jpg" alt=""></div>
+				<div id = "upcenter22">
+					<form action="">
+						<input type="text" id="searchform" value="输入商品网址或关键词，直通全网，快速帮5购！">
+					</form>
+					<div style="margin-top: 15px;width: 83px;height: 42px;float: left;background-color: #fe6c00"><a href="#" style="font-size: 17px;color: #ffffff;margin-left: 16px;;line-height: 42px;">搜全网</a></div>
+					<ul>
+						<li><a href="#" style="color: red">洗头护发</a></li>
+						<li><a href="#" style="color: red">日本纸尿裤</a></li>
+						<li><a href="#" style="color: #74736d">身体乳</a></li>
+						<li><a href="#" style="color: #74736d;">内衣文胸</a></li>
+						<li><a href="#" style="color:#aca9d3">iPhone 6s</a></li>
+						<li><a href="#" style="color:#aca9d3">iPad Air2</a></li>
+						<li><a href="#" style="color: #74736d">牛仔裤</a></li>
+						<li><a href="#" style="color: #74736d">奶粉</a></li>
+						<li><a href="#" style="color: #74736d">防晒霜</a></li>
+						<li style="border:none;"><a href="#" style="color: #74736d">伞</a></li>
+					</ul>
+				</div>
+				<div id = "upcenter23">
+					<div class="a05051">
+						<a id = "erji" href="#"></a>
+						<p style="font-size: 12px;color:#9a9791;margin-top: 25px;">400-085-0505</p>
+					</div>
+					<div class="a05052">
+						<a id = "xinfeng" href="#"></a>
+						<p style="font-size: 12px;color:#9a9791;margin-top: 25px;">mc@b5m.com</p>
+					</div>
+					<div id = "a05053">
+						<a id="yiwen" href="#"></a>
+						<a href="#">常见问题</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="gcblack">
+		<div id="gcblackcenter">
+			<ul>
+				<li style="background-color: #fe0d4a;">首页</li>
+				<li>热门品牌</li>
+				<li>美妆个户</li>
+				<li>服饰鞋包</li>
+				<li>母婴生活</li>
+				<li>食品保健</li>
+				<li>韩国直邮</li>
+				<li>跨境购</li>
+			</ul>
+			<img src="image/web-8/ff_03.jpg" alt="">
+		</div>
+	</div>
+	<div id = "main">
+		<div id="maincenter">
+			<div id="mulu">
+				<p>首页>美容护肤/美体/精油>防晒>韩国 RE：CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+			</div>
+			<div id="maincenter1">
+				<div id="shangpinya">
+					<div id="shangpin">
+						<img src="image/web-8/pp0.jpeg" alt="" id="wlwlwlw">
+						<div id="slider"></div>
+					</div>
+					<img src="image/web-8/spanl.jpg" alt="">
+					<img src="image/web-8/sp0.jpeg" alt="" id="xuanzhong1">
+					<img src="image/web-8/sp1.jpeg" alt="" id="xuanzhong2">
+					<img src="image/web-8/spanr.jpg" alt="" id="spanr">
+				</div>
+				<div id="dashangpin">
+					<img src="image/web-8/pp0.jpeg" alt="" id="img2">
+				</div>
+				<div id="xiangqingya">
+					<p id="biaoti">韩国 RE：CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+					<p class="zhengwen">【限购3件】超透明无痕防晒，防水防汗定妆，保湿降温不黏腻。水晶防晒喷雾，喷后皮</p>
+					<p class="zhengwen" style="margin-bottom: 34px;">肤水润，不油，不留白，更不会像防晒霜那样抹不开，非常实用，开始存货吧。</p>
+					<span style="font-size: 13px;color: #676660;">价格</span>
+					<span style="margin-left: 57px;margin-right: 18px;font-size: 14px;color:#ff0000">￥71</span>
+					<span style="text-decoration: line-through;font-size: 12px;">￥150</span>
+					<img src="image/web-8/ss_09.jpg" alt="">
+					<div id="jinghanliang">
+						化妆品净含量
+					</div>
+					<div id="ml1"><span style="margin-top: 10px;margin-left: 10px;font-size: 12px">150ml</span><img src="image/web-8/duigou.png" alt="" id="duigou"></div>
+					<div id="ml2"><span style="margin-top: 10px;margin-left: 10px;font-size: 12px">200ml</span></div>
+					<div id="he123">
+						<div id="counttt">数量</div>
+						<div id="fuhao1">-</div>
+						<div id="countt">1</div>
+						<div id="fuhao2">+</div>
+						<span style="font-size: 12px;margin-left: 15px">件(库存5件)</span>
+					</div>
+					<img src="image/web-8/oo_03.jpg" alt="">
+					<div style="float: left;width: 350px;height: 25px;line-height: 25px;text-align: center;font-size: 12px;">您已选择<span style="font-size: 14px;color: #ff9003;margin-left:15px;" id="mlll">"150ml"</span></div>
+					<div style="height: 80px;width: 500px;float: left;margin-left: 20px;margin-top: 20px;">
+						<div id="goumai">立即购买</div>
+						<div id="gouwuche">加入购物车</div>
+					</div>
+				</div>
+			</div>
+			<div id="maincenter2">
+				<img src="image/web-8/ww_07.jpg" alt="">
+			</div>
+			<div><img src="image/web-8/a_07.jpg" alt=""></div>
+			<div id="downcenter">
+			<div id="downcenter1">
+				<img src="image/web-8/loginB.jpg" alt="" style="float: left;border-bottom: 1px solid #f8f7f6;">
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">购物指南</li>
+					<li>如何下单</li>
+					<li>帮5购流程</li>
+					<li>订单查询</li>
+					<li>物流配送</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">支付相关</li>
+					<li>支付方式</li>
+					<li>安全设置</li>
+					<li>账户信息</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">售后服务</li>
+					<li>取消订单</li>
+					<li>申请售后</li>
+					<li>退货流程</li>
+					<li>退款相关</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">VIP服务</li>
+					<li>VIP优惠</li>
+					<li>如何成为VIP</li>
+					<li>超级帮钻</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">帮韩品</li>
+					<li>韩国正品</li>
+					<li>闪电发货</li>
+					<li>帮韩品售后</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">更多</li>
+					<li>手机APP</li>
+					<li>帮5采APP</li>
+					<li>帮5淘插件</li>
+					<li>其他</li>
+				</ul>
+				<img src="image/web-8/erweima.jpg" alt="" style="margin-left: 140px;margin-top: 31px;">
+			</div>
+			<div id="downcenter2">
+				<ul id="guanyu">
+					<li>关于帮5买</li>
+					<li>联系我们</li>
+					<li>合作商家</li>
+					<li>友情连接</li>
+					<li>加入我们</li>
+					<li>移动应用</li>
+					<li>热门</li>
+					<li>广告联盟</li>
+					<li style="border-right: none">使用条款</li>
+				</ul>
+				<p id="p1">Copyright © 2011-2015 B5M.COM.All rights reserved. Powered by B5Msoft Co.,Ltd.</p>
+				<p id="p2">增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书（沪）-非营业性-2013-0034沪卫（中医）网审【2015】10032号 沪ICP备11034776号-3|食品流通许可证：</p>
+				<p id="p3">SP3101151410301755</p>
+				<img src="image/web-8/bo1.gif" alt="" id="tu111">
+				<img src="image/web-8/bo2.png" alt="">
+				<img src="image/web-8/bo3.gif" alt="">
+				<img src="image/web-8/bo4.png" alt="">
+				<img src="image/web-8/bo5.png" alt="">
+				<img src="image/web-8/bo6.png" alt="">
+				<img src="image/web-8/bo7.png" alt="">
+			</div>
+		</div>
+		</div>
+	</div>
+	<div id="back">
+	</div>
+	<div id="tanchuang">
+		<div style="width: 20px;height: 20px;float: left;margin-left: 380px;cursor: pointer;" id="xxx">X</div>
+		<div><img src="image/web-8/rr11_02.jpg" alt=""></div>
+		<div id="jixugouwu">继续购物</div>
+		<div id="jiesuan">去购物车结算</div>
+	</div>
+</body>
+<script>
+	//选择商品样式
+	var xuanzhong1 = document.getElementById("xuanzhong1");
+	var xuanzhong2 = document.getElementById("xuanzhong2");
+	var img2 = document.getElementById("img2");
+	var wlwlwlw = document.getElementById("wlwlwlw");
+	xuanzhong1.onmouseover = function(){
+		xuanzhong1.setAttribute("id", "xuanzhong1");
+		xuanzhong2.setAttribute("id", "xuanzhong2");
+		wlwlwlw.setAttribute("src", "image/web-8/pp0.jpeg");
+		img2.setAttribute("src", "image/web-8/pp0.jpeg")
+	}
+	xuanzhong2.onmouseover = function(){
+		xuanzhong2.setAttribute("id", "xuanzhong1");
+		xuanzhong1.setAttribute("id", "xuanzhong2");
+		wlwlwlw.setAttribute("src", "image/web-8/pp1.jpeg");
+		img2.setAttribute("src", "image/web-8/pp1.jpeg")
+	}
+
+	//选择商品容量
+	var ml1 = document.getElementById("ml1");
+	var ml2 = document.getElementById("ml2");
+	var mlll = document.getElementById("mlll");
+	ml1.onclick = function(){
+		var duigou = document.createElement("img");
+		duigou.setAttribute("src", "image/web-8/duigou.png");
+		ml1.setAttribute("id", "ml1");
+		ml2.setAttribute("id", "ml2");
+		if(!ml1.children[1]){
+			ml1.appendChild(duigou);
+		}
+		if(ml2.children[1]){
+			ml2.children[1].parentNode.removeChild(ml2.children[1]);
+		}
+		mlll.innerHTML = '"' + ml1.children[0].innerHTML + '"';
+	}
+	console.log(mlll);
+	ml2.onclick = function(){
+		var duigou = document.createElement("img");
+		duigou.setAttribute("src", "image/web-8/duigou.png");
+		ml2.setAttribute("id", "ml1");
+		ml1.setAttribute("id", "ml2");
+		if(!ml2.children[1]){
+			ml2.appendChild(duigou);
+		}
+		if(ml1.children[1]){
+			ml1.children[1].parentNode.removeChild(ml1.children[1]);
+		}
+		mlll.innerHTML = '"' + ml2.children[0].innerHTML + '"';
+	}
+	//选择商品数量
+	var fuhao1 = document.getElementById("fuhao1");
+	var fuhao2 = document.getElementById("fuhao2");
+	var countt = document.getElementById("countt");
+	fuhao1.setAttribute("cursor", "pointer");
+	fuhao2.setAttribute("cursor", "pointer");
+	fuhao1.onclick = function(){
+		if(countt.innerHTML == 1){
+			fuhao1.style.cursor = "not-allowed";
+			return;
+		}
+		fuhao1.style.cursor = "pointer";
+		fuhao2.style.cursor = "pointer";
+		countt.innerHTML--;
+	}
+	fuhao2.onclick = function(){
+		if(countt.innerHTML == 5){
+			fuhao2.style.cursor = "not-allowed";
+			return;
+		}
+		fuhao1.style.cursor = "pointer";
+		fuhao2.style.cursor = "pointer";
+		countt.innerHTML ++;
+	}
+	//立即购买
+	var goumai = document.getElementById("goumai");
+	var back = document.getElementById("back");
+	var tanchuang = document.getElementById("tanchuang");
+	var jixugouwu = document.getElementById("jixugouwu");
+	var xxx = document.getElementById("xxx");
+	goumai.onclick = function(){
+		console.log(back.style.display);
+		back.style.display = "block";
+		tanchuang.style.display = "block";
+	}
+	xxx.onclick = function(){
+		back.style.display = "none";
+		tanchuang.style.display = "none";
+	}
+	jixugouwu.onclick = function(){
+		back.style.display = "none";
+		tanchuang.style.display = "none";
+	}
+	//放大镜
+	var maincenter1 = document.getElementById("maincenter1");//box
+	var shangpin = document.getElementById("shangpin");//img1
+	var wlwlwlw = document.getElementById("wlwlwlw");
+	var dashangpin = document.getElementById("dashangpin");//img2
+	var img2 = document.getElementById("img2");//Bimg
+	var slider = document.getElementById("slider");//slider
+	shangpin.onmouseover=function(){
+	    slider.style.display='block';
+		dashangpin.style.display='block';
+		img2.style.display='block';
+ 	}
+	shangpin.onmouseout=function(){
+	    slider.style.display='none';
+		dashangpin.style.display='none';
+		img2.style.display='none';
+ 	}
+ 	//滚动距离
+ 	function getScrollTop(){
+ 	 	var scrollTop=0; 	
+ 	 	if(document.documentElement&&document.documentElement.scrollTop){
+ 	 	 		scrollTop=document.documentElement.scrollTop; 	
+ 	 	}else if(document.body){
+ 	 	 		scrollTop=document.body.scrollTop;
+ 	 	} 	
+ 	 	return scrollTop; 
+ 	 } 
+    shangpin.onmousemove=function(ev){
+		var ev=ev||event;
+		console.log(getScrollTop());
+		var oL=ev.clientX-(maincenter1.offsetLeft + 20) -slider.offsetWidth/2;
+		var oT=ev.clientY-(maincenter1.offsetTop - getScrollTop() + 20) -slider.offsetHeight/2;
+		  
+		var oMaxw=shangpin.offsetWidth-slider.offsetWidth;
+		var oMaxh=shangpin.offsetHeight-slider.offsetHeight;
+		  
+		oL=oL>oMaxw?oMaxw:oL<0?0:oL;
+		oT=oT>oMaxh?oMaxh:oT<0?0:oT;
+		
+		slider.style.left = oL + 20 + 'px';
+		slider.style.top = oT + 20 + 'px' ;
+		
+		var oBmaxw = dashangpin.offsetWidth - img2.offsetWidth; 
+		var oBmaxh = dashangpin.offsetHeight - img2.offsetHeight; 
+		img2.style.left = ( oL/oMaxw ) * oBmaxw + 'px'
+		img2.style.top = ( oT/oMaxh ) * oBmaxh + 'px'
+	}
+</script>
+</html>

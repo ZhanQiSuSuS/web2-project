@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web-project</title>
+	<style>
+	    * {
+	    	padding: 0;
+	    	margin: 0;
+	    }
+	    ul,li,ol {
+	    	list-style: none;
+	    }
+	    a {
+	    	text-decoration: none;
+	    }
+		#up{
+			width: 100%;
+			background-color: #ffffff;
+			height: 132px;
+			z-index: 4;
+		}
+		#main{
+			width: 100%;
+			background-color: #f8f7f6;
+			height: 920px;
+		}
+		#upcenter{
+			width: 1180px;
+			height: 170px;
+			margin: 0 auto;
+		}
+		#upcenter1{
+			width: 1180px;
+			height: 43px;
+			margin: 0 auto;
+		}
+		#upcenter1 a{
+			font-size: 12px;
+			color: #9a9791;
+			float: left;
+			margin-top: 7px;
+		}
+		#upcenter1 ul{
+			font-size: 12px;
+			color: #9a9791;
+			float: left;
+			margin-left: 362px;
+		}
+		#upcenter1 li{
+			font-size: 12px;
+			color: #9a9791;
+			float: left;
+			margin-left: 18px;
+		}
+		#QQimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -31px;
+		}
+		#wechatimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -53px;
+		}
+		#weiboimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -75px;
+		}
+		#messageimg{
+			width: 19px;
+			height: 19px;
+			background: url('image/web-8/common_min.png') 0 -114px;
+		}
+		#count{
+			color:#fe6c00;
+			font-size: 12px;
+			margin-top: 7px;
+			font-weight: bolder;
+			float: left;
+			margin-left: 3px
+		}
+		#upcenter2{
+			width: 1180px;
+			height: 90px;
+			margin: 0 auto;
+		}
+		#upcenter21{
+			width: 250px;
+			height: 86px;
+			float: left;
+		}
+		#searchform{
+			width: 500px;
+			height: 36px;
+			border: 3px solid #fe6c00;
+			float: left;
+			color: #74736d;
+			margin-top: 15px;
+		}
+		#upcenter22{
+			width: 600px;
+			height: 86px;
+			float: left;
+		}
+		#upcenter22 li{
+			float: left;
+			font-size: 13px;
+			margin-left: 7px;
+			padding-right: 7px;
+			margin-top: 11px;
+			border-right: 1px solid #e6e5e2;
+		}
+		#upcenter23{
+			height: 86px;
+			width: 330px;
+			float: left;
+		}
+		.a05051{
+			margin-top: 15px;
+			width: 82px;
+			height: 40px;
+			margin-left: 73px;
+			border: 1px solid #e6e5e2;
+			float: left;
+		}
+		#erji{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-top: 6px;
+			margin-left: 31px;
+			background: url('image/web-8/common_min.png') 0 -97px;
+		}
+		.a05052{
+			margin-top: 15px;
+			width: 85px;
+			height: 40px;
+			border: 1px solid #e6e5e2;
+			float: left;
+		}
+		#xinfeng{
+			width: 19px;
+			height: 19px;
+			float: left;
+			margin-top: 6px;
+			margin-left: 31px;
+			background: url('image/web-8/common_min.png') 0 -115px;
+		}
+		#a05053{
+			margin-top: 15px;
+			width: 81px;
+			height: 40px;
+			margin-right: 1px;
+			border: 1px solid #e6e5e2;
+			background-color: #ff4d04;
+			float: left;
+		}
+		#a05053 a{
+			float: left;
+			font-size: 14px;
+			color: #fff;
+			margin-top: 13px;
+			margin-left: 2px;
+		}
+		#yiwen{
+			width: 19px;
+			height: 17px;
+			float: left;
+			background: url('image/web-8/common_min.png') 0 -131px;
+		}
+		#upcenter3{
+			width: 1180px;
+			height: 40px;
+			margin: 0 auto;
+			
+		}
+		#upcenter3 li{
+			float: left;
+			font-size: 13px;
+			padding: 11px 36px;
+			cursor:pointer;
+		}
+	/* 	#upcenter3 li:hover{
+			float: left;
+			font-size: 13px;
+			padding: 11px 36px;
+			background-color: #ff4d04;
+			color: #fff;
+		} */
+		#maincenter{
+			width: 1180px;
+			height: 550px;
+			margin: 0 auto;
+			background-color: #ffffff;
+		}
+		.maincenter1{
+			width: 170px;
+			height: 549px;
+			float: left;
+		}
+		.maincenter2{
+			width: 199px;
+			height: 549px;
+			float: left;
+		}
+		#maincenter3{
+			float: left;
+			width: 809px;
+			height: 549px;
+			border-right: 2px solid #ff4d04;
+		}
+		#maincenter11{
+			height: 422px;
+			width: 170px;
+			float: left;
+			border-bottom: 1px solid #ff4d04;
+		}
+		#bian1{
+			width: 24px;
+			height: 398px;
+			background-color: #4c4c4a;
+			color: #ff4d04;
+			float: left;
+			padding-top: 24px;
+		}
+		#bian1 p{
+			font-size: 15px;
+			margin-left: 5px;
+		}
+		#bian1 p span{
+			float: left;
+			margin-top: 15px;
+			font-size: 15px;
+		}
+		#bian2{
+			width: 146px;
+			height: 398px;
+			padding: 5px 0;
+			float: left;
+			font-size: 12px;
+		}
+		#bian2 td{
+			margin-bottom: 11px;
+			margin-left: 8px;
+			float: left;
+		}
+		#maincenter12{
+			height: 126px;
+			width: 170px;
+			float: left;
+		}
+		.fuwu{
+			height: 42px;
+			width: 146px;
+		}
+		.fuwu img{
+			float: left;
+			margin-top: 12px;
+			margin-left: 6px;
+			margin-right: 9px;
+		}
+		.fuwu p{
+			float: left;
+			font-size: 12px;
+			margin-top: 16px;
+			color: #855d38;
+		}
+
+		/* 轮播图 */
+		.box{
+			width: 809px;
+			height: 361px;
+			margin: 0px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.slider{
+			width: 6480px;
+			position: absolute;
+			left: -810px;
+			z-index: 2;
+		}
+		.slide{
+			width: 810px;
+			overflow: hidden;
+			float: left;
+		}
+		.box>span{
+			display: block;
+			width: 60px;
+			height: 60px;
+			text-align: center;
+			cursor: pointer;
+			color: #fff;
+			top: 160px;
+			line-height: 50px;
+			font-size: 30px;
+			position: absolute;
+			/* display: none; */
+			opacity: 0;
+			z-index: 3;
+		}
+		#left{
+			left: 30px;
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+			background: url('image/web-8/btn.gif') 0 0;
+		}
+		#right{
+			right: 30px;
+		}
+		/* #leftt{
+			width: 60px;
+			height: 60px;
+			background: url('image/web-8/btn.gif') 0 0;
+		}
+		#rightt{
+			width: 60px;
+			height: 60px;
+			background: url('image/web-8/btn.gif') 0 -60px;
+		} */
+		.nav{
+			position: absolute;
+			left: 280px;
+			bottom: 20px;
+			z-index: 3;
+		}
+		.nav>li{
+			float: left;
+			width: 20px;
+			height: 20px;
+			background: #fff;
+			cursor: pointer;
+			margin: 0 10px;
+			border-radius: 50%;
+			font-size: 12px;
+			text-align: center;
+			line-height: 20px;
+		}
+		.nav .active{
+			background: #fe6c00;
+			color: #476954;
+		}
+		/* 轮播图 */
+
+
+
+		#fourpics{
+			float: left;
+			height: 183px;
+			width: 809px;
+			border-top: 2px solid #ff4d04;
+		}
+		#fourpics img{
+			float: left;
+		}
+		#maincenter21{
+			height: 362px;
+			width: 199px;
+			float: left;
+			border-bottom: 1px solid #f8f7f6;
+		}
+		#maincenter22{
+			width: 169px;
+			float: left;
+			height: 173px;
+			padding: 7px 15px;
+		}
+		#bbkuaixun{
+			width: 171px;
+			height: 14px;
+			float: left;
+			padding: 14px;
+			border-bottom: 1px solid #ebeae7;
+		}
+		#bbkuaixun img{
+			float: left;
+		}
+		#bbkuaixun p{
+			float: left;
+			font-size: 14px;
+			font-weight: bold;
+			margin-left: 15px;
+			margin-right: 46px;
+			color: #fe6c00;
+		}
+		#bbkuaixun span{
+			font-size: 14px;
+			color: #fe6c00;
+			float: left;
+		}
+		#lunbozimu{
+			height: 308px;
+			width: 199px;
+			float: left;
+			overflow: hidden;
+			position: relative;
+		}
+		#lunbozimuer{
+			height: 672px;
+			top: -308px;
+			position: absolute;
+		}
+		#lunbozimuer div{
+			height: 28px;
+			width: 199px;
+			float: left;
+			cursor:pointer;
+		}
+		#lunbozimuer div p{
+			font-size: 13px;
+			float: left;
+			margin-top: 2px;
+			margin-left: 4px;
+			color: #ff4d04;
+			font-weight: bold;
+		}
+		#maincenter22 img{
+			float: left;
+			margin-right: 14px;
+		}
+		#maincenter22 p{
+			float: left;
+			font-size: 12px;
+			margin-right: 5px;
+			margin-top: 4px;
+		}
+		#maincenter22 span{
+			font-size: 12px;
+			color: #ff4d04;
+		}
+		#phonenumber{
+			width: 124px;
+			height: 24px;
+			margin-top: 11px;
+			margin-bottom: 7px;
+			color: #74736d;
+		}
+		#money{
+			width: 61px;
+			height: 17px;
+		}
+		#chongzhi{
+			width: 175px;
+			height: 25px;
+			background-color: #ff4d04;
+			border: 1px solid #ff4d04;
+			border-radius: 5px;
+			margin-top: 6px;
+			color: #fff;
+			font-weight: bold;
+			cursor:pointer;
+		}
+		#down{
+			width: 100%;
+			height: 345px;
+			background-color: #f8f7f6;
+		}
+		#downcenter{
+			margin: 0 auto;
+			width: 1180px;
+			height: 364px;
+		}
+		#downcenter1{
+			width: 1180px;
+			height: 180px;
+			float: left;
+			border-bottom: 1px solid #d0cdc7;
+		}
+		#downcenter2{
+			width: 1180px;
+			height: 183px;
+			float: left;
+		}
+		.zhinan{
+			float: left;
+			margin-top: 31px;
+			margin-left: 60px;
+
+		}
+		.zhinan li{
+			font-size: 12px;
+			margin-bottom: 14px;
+			color: #666560;
+			cursor:pointer;
+		}
+		#downcenter2 p{
+			float: left;
+			margin-top: 13px;
+			font-size: 12px;
+			color: #9a9791;
+		}
+		#p1{
+			margin-left: 345px;
+			margin-right: 345px;
+		}
+		#p2{
+			margin-left: 57px;
+			margin-right: 57px;
+		}
+		#p3{
+			margin-left: 521px;
+			margin-right: 521px;
+		}
+		#guanyu li{
+			float: left;
+			text-align: center;
+			padding: 0 13px;
+			border-right: 1px solid #d0cdc7;
+			cursor:pointer;
+			font-size: 12px;
+			color: #666560;
+		}
+		#guanyu{
+			margin-left: 245px;
+			margin-top: 18px;
+		}
+		#downcenter2 img{
+			margin-top: 13px;
+		}
+		#tu111{
+			margin-left: 200px;
+		}
+		#bian1111{
+			width: 125px;
+			height: 105px;
+			position: fixed;
+			top: 60px;
+			right: -80px;
+			z-index: 6;
+		}
+		#bian1111 img{
+			float: left;
+		}
+		#bian2222{
+			width: 124px;
+			height: 145px;
+			position: fixed;
+			background-color: #fd9a6e;
+			top: 170px;
+			right: -80px;
+			z-index: 6;
+		}
+		#bian3333{
+			width: 124px;
+			height: 145px;
+			position: fixed;
+			background-color: #fd9a6e;
+			top: 320px;
+			right: -80px;
+			z-index: 6;
+		}
+		#bian4444{
+			width: 124px;
+			height: 140px;
+			position: fixed;
+			background-color: #fd9a6e;
+			top: 470px;
+			right: -80px;
+			z-index: 6;
+		}
+		#soberwei{
+			float: left;
+			margin-top: 50px;
+			margin-left: 10px;
+		}
+		#soberwei1{
+			float: left;
+			margin-left: 10px;
+		}
+		#bian2 table tr td{
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="bian1111">
+		<img src="image/web-8/consult-s.png" alt="">
+		<img src="image/web-8/xiaobang.png" alt="" style="margin-left: 1px;">
+	</div>
+	<div id="bian2222">
+		<img src="image/web-8/youhui.png" alt="" style="float: left;">
+		<span style="font-size: 12px;margin-top: 40px;margin-bottom: 10px;float: left;">未登录</span>
+		<button style="border: 1px solid #fff;border-radius: 2px;width: 40px;height: 20px;background-color: #fd9a6e;font-size: 12px;color: #fff;">登录</button>
+	</div>
+	<div id="bian3333">
+		<img src="image/web-8/app.png" alt="">
+		<img src="image/web-8/serwei.png" alt="" id="soberwei" class = "">
+	</div>
+	<div id="bian4444">
+		<img src="image/web-8/cart.png" alt="">
+	</div>
+	<div id = "up">
+		<div id = "upcenter">
+			<div id = "upcenter1">
+				<a>帮5买，享帮帮</a>
+				<ul>
+					<li>
+						<a id="QQimg" href="#"></a>
+					</li>
+					<li>
+						<a id="wechatimg" href="#"></a>
+					</li>
+					<li>
+						<a id="weiboimg" href="#"></a>
+					</li>
+					<li><a href="#">登录</a></li>
+					<li><a href="#">注册</a></li>
+					<li><a id="messageimg" href="#"></a><a href="#" style="margin-left:3px;">消息</a></li>
+					<li><a href="#"><img src="image/web-8/dingdan.jpg" alt=""></a><a href="#" style="margin-left:3px;">我的订单</a></li>
+					<li><a href="#">我的收藏</a></li>
+					<li><a href="#">帮钻兑换</a></li>
+					<li><a href="#"><img src="image/web-8/tp-my-phone.png" alt=""></a><a href="#" style="margin-left:3px;">手机版</a></li>
+					<li><a href="#">帮5淘</a></li>
+					<li><a href="#">客户服务</a></li>
+					<li><a href="#"><img src="image/web-8/gouwuche.jpg" alt=""></a><a href="#" style="margin-left:3px;">购物车</a><span id = "count">0</span></li>
+				</ul>
+			</div>
+			<div id = "upcenter2">
+				<div id = "upcenter21"><img src="image/web-8/logo_03.jpg" alt=""></div>
+				<div id = "upcenter22">
+					<form action="">
+						<input type="text" id="searchform" value="输入商品网址或关键词，直通全网，快速帮5购！">
+					</form>
+					<div style="margin-top: 15px;width: 83px;height: 42px;float: left;background-color: #fe6c00"><a href="#" style="font-size: 17px;color: #ffffff;margin-left: 16px;;line-height: 42px;">搜全网</a></div>
+					<ul>
+						<li><a href="#" style="color: red">洗头护发</a></li>
+						<li><a href="#" style="color: red">日本纸尿裤</a></li>
+						<li><a href="#" style="color: #74736d">身体乳</a></li>
+						<li><a href="#" style="color: #74736d;">内衣文胸</a></li>
+						<li><a href="#" style="color:#aca9d3">iPhone 6s</a></li>
+						<li><a href="#" style="color:#aca9d3">iPad Air2</a></li>
+						<li><a href="#" style="color: #74736d">牛仔裤</a></li>
+						<li><a href="#" style="color: #74736d">奶粉</a></li>
+						<li><a href="#" style="color: #74736d">防晒霜</a></li>
+						<li style="border:none;"><a href="#" style="color: #74736d">伞</a></li>
+					</ul>
+				</div>
+				<div id = "upcenter23">
+					<div class="a05051">
+						<a id = "erji" href="#"></a>
+						<p style="font-size: 12px;color:#9a9791;margin-top: 25px;">400-085-0505</p>
+					</div>
+					<div class="a05052">
+						<a id = "xinfeng" href="#"></a>
+						<p style="font-size: 12px;color:#9a9791;margin-top: 25px;">mc@b5m.com</p>
+					</div>
+					<div id = "a05053">
+						<a id="yiwen" href="#"></a>
+						<a href="#">常见问题</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="width: 100%;height: 40px;border-bottom: 2px solid #ff4d04;">
+		<div id = "upcenter3">
+			<ul>
+				<li style="float: left;font-size: 13px;padding: 11px 36px;background-color: #ff4d04;color: #fff;">全部商品分类</li>
+				<li>帮5赚</li>
+				<li>帮韩品</li>
+				<li>超划算</li>
+				<li>品牌货栈</li>
+				<li>韩国馆</li>
+				<li>帮社区</li>
+				<li style="background: url(image/web-8/hot.gif) no-repeat top right;padding-right: 22px;">1元兑奖</li>
+			</ul>
+		</div>
+	</div>
+	<div id = "main">
+		<div id = "maincenter">
+			<div class="maincenter1">
+				<div id = "maincenter11">
+					<div id="bian1">
+						<p>当前搜索电商<span>全网</span></p>
+					</div>
+					<div id="bian2">
+						<table cellspacing="5">
+							<tr>
+								<td>手机</td>
+								<td>数码</td>
+								<td>影音</td>
+								<td>配件</td>
+							</tr>
+							<tr>
+								<td>电脑</td>
+								<td>网络</td>
+								<td>办公</td>
+								<td>打印</td>
+							</tr>
+							<tr>
+								<td>家电</td>
+								<td>厨卫</td>
+								<td>生活</td>
+								<td>个户</td>
+							</tr>
+							<tr>
+								<td>园艺</td>
+								<td>家具</td>
+								<td>家纺</td>
+								<td>家饰</td>
+							</tr>
+							<tr>
+								<td>彩妆</td>
+								<td>面部</td>
+								<td>身体</td>
+								<td>香水</td>
+							</tr>
+							<tr>
+								<td>男装</td>
+								<td>女装</td>
+								<td>内衣</td>
+								<td>其他</td>
+							</tr>
+							<tr>
+								<td>女包</td>
+								<td>男包</td>
+								<td>女鞋</td>
+								<td>男鞋</td>
+							</tr>
+							<tr>
+								<td>运动</td>
+								<td>户外</td>
+								<td>装备</td>
+								<td>服饰</td>
+							</tr>
+							<tr>
+								<td>儿童</td>
+								<td>婴儿</td>
+								<td>食品</td>
+								<td>玩具</td>
+							</tr>
+							<tr>
+								<td>乐器</td>
+								<td>家宠</td>
+								<td>收藏</td>
+								<td>鲜花</td>
+							</tr>
+							<tr>
+								<td>保健</td>
+								<td>理疗</td>
+								<td>药品</td>
+								<td>眼镜</td>
+							</tr>
+							<tr>
+								<td>果蔬</td>
+								<td>礼品</td>
+								<td>粮油</td>
+								<td>特产</td>
+							</tr>
+							<tr>
+								<td>文艺</td>
+								<td>生活</td>
+								<td>科技</td>
+								<td>教育</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id = "maincenter12">
+					<div class="fuwu">
+						<img src="image/web-8/dd_03.jpg" alt="">
+						<p>什么是帮5购</p>
+					</div>
+					<div class="fuwu">
+						<img src="image/web-8/dd_06.jpg" alt="">
+						<p>帮5购提供什么服务</p>
+					</div>
+					<div class="fuwu">
+						<img src="image/web-8/dd_08.jpg" alt="">
+						<p>如何开通帮5购服务</p>
+					</div>
+				</div>
+			</div>
+			<div id="maincenter3">
+				<div class="box" id="box">
+					<div class="slider" id="slider">
+						<div class="slide"><img src="image/web-8/bann6.png" alt=""></div>
+						<div class="slide"><img src="image/web-8/bann1.jpeg" alt=""></div>
+						<div class="slide"><img src="image/web-8/bann2.jpeg" alt=""></div>
+						<div class="slide"><img src="image/web-8/bann3.jpeg" alt=""></div>
+						<div class="slide"><img src="image/web-8/bann4.jpeg" alt=""></div>
+						<div class="slide"><img src="image/web-8/bann5.jpeg" alt=""></div>
+						<div class="slide"><img src="image/web-8/bann6.png" alt=""></div>
+						<div class="slide"><img src="image/web-8/bann1.jpeg" alt=""></div>
+					</div>
+					<span id="left"><img src="image/web-8/btn.gif" alt="" id="leftt"></span>
+					<span id="right"><img src="image/web-8/images/btn_02.png" alt="" id="rightt"></span>
+					<ul class="nav" id="nav">
+						<li class="active">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+					</ul>
+				</div>
+				<div id="fourpics">
+					<img src="image/web-8/1(1).jpg" alt="">
+					<img src="image/web-8/2.jpg" alt="">
+					<img src="image/web-8/3(1).png" alt="">
+					<a href="web作业9.2.html"><img src="image/web-8/qqq.png" alt="" style="margin-left: 9px"></a>
+				</div>
+			</div>
+			<div class="maincenter2">
+				<div id="maincenter21">
+					<div id="bbkuaixun">
+						<img src="image/web-8/ico-notice.png" alt="">
+						<p>帮帮快讯</p><span>>&nbsp;></span>
+					</div>
+					<div id="lunbozimu">
+						<div id = "lunbozimuer">
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整3</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整4</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整5</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整6</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整7</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整8</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整9</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整10</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整11</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整12</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整13</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整1</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整2</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整3</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整4</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整5</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整6</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整7</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整8</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整9</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整10</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整11</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整12</p>
+							</div>
+							<div>
+								<p>[公告]&nbsp;&nbsp;帮购及VIP服务调整13</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="maincenter22">
+					<img src="image/web-8/phone.png" alt="">
+					<p>话费充值</p><span>(可使用超级帮钻)</span>
+					<input id="phonenumber" type="text" value="请输入手机号">
+					<select name="money" id="money">
+						<option value="10">10</option>
+						<option value="30" selected>30</option>
+						<option value="50">50</option>
+						<option value="100">100</option>
+					</select>
+					<span id="mmmmmm">￥30</span>
+					<button id="chongzhi">充值</button>
+				</div>
+			</div>
+		</div>
+		<div id="downcenter">
+			<div id="downcenter1">
+				<img src="image/web-8/loginB.jpg" alt="" style="float: left;border-bottom: 1px solid #f8f7f6;">
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">购物指南</li>
+					<li>如何下单</li>
+					<li>帮5购流程</li>
+					<li>订单查询</li>
+					<li>物流配送</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">支付相关</li>
+					<li>支付方式</li>
+					<li>安全设置</li>
+					<li>账户信息</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">售后服务</li>
+					<li>取消订单</li>
+					<li>申请售后</li>
+					<li>退货流程</li>
+					<li>退款相关</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">VIP服务</li>
+					<li>VIP优惠</li>
+					<li>如何成为VIP</li>
+					<li>超级帮钻</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">帮韩品</li>
+					<li>韩国正品</li>
+					<li>闪电发货</li>
+					<li>帮韩品售后</li>
+				</ul>
+				<ul class = "zhinan">
+					<li class="first" style="font-size: 15px;color: #000;">更多</li>
+					<li>手机APP</li>
+					<li>帮5采APP</li>
+					<li>帮5淘插件</li>
+					<li>其他</li>
+				</ul>
+				<img src="image/web-8/erweima.jpg" alt="" style="margin-left: 140px;margin-top: 31px;">
+			</div>
+			<div id="downcenter2">
+				<ul id="guanyu">
+					<li>关于帮5买</li>
+					<li>联系我们</li>
+					<li>合作商家</li>
+					<li>友情连接</li>
+					<li>加入我们</li>
+					<li>移动应用</li>
+					<li>热门</li>
+					<li>广告联盟</li>
+					<li style="border-right: none">使用条款</li>
+				</ul>
+				<p id="p1">Copyright © 2011-2015 B5M.COM.All rights reserved. Powered by B5Msoft Co.,Ltd.</p>
+				<p id="p2">增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书（沪）-非营业性-2013-0034沪卫（中医）网审【2015】10032号 沪ICP备11034776号-3|食品流通许可证：</p>
+				<p id="p3">SP3101151410301755</p>
+				<img src="image/web-8/bo1.gif" alt="" id="tu111">
+				<img src="image/web-8/bo2.png" alt="">
+				<img src="image/web-8/bo3.gif" alt="">
+				<img src="image/web-8/bo4.png" alt="">
+				<img src="image/web-8/bo5.png" alt="">
+				<img src="image/web-8/bo6.png" alt="">
+				<img src="image/web-8/bo7.png" alt="">
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	//悬浮头部
+	var up = document.getElementById("up");
+	window.onscroll = function(){
+		var st = document.documentElement.scrollTop || document.body.srollTop;
+		if(st > 180){
+			up.style.position = "fixed";
+		}else{
+			up.style.position = "static";
+		}
+	}
+
+	//轮播图
+	var box = document.getElementById('box');
+	var oNavlist = document.getElementById('nav').children;
+	var slider = document.getElementById('slider');
+	var left = document.getElementById('left');
+	var right = document.getElementById('right');
+	var index = 1;
+	var timer;
+	var timer1;
+	var isMoving = false;
+	box.onmouseover = function(){
+		animate(left,{opacity:50})
+		animate(right,{opacity:50})
+		clearInterval(timer)
+	}
+	box.onmouseout = function(){
+		animate(left,{opacity:0})
+		animate(right,{opacity:0})
+		timer = setInterval(next, 3000);
+	}
+	right.onclick = next;
+	left.onclick = prev;
+	for( var i=0; i<oNavlist.length; i++ ){
+		oNavlist[i].index = i;
+		oNavlist[i].onclick = function(){
+			index = this.index+1;
+			navmove();
+			animate(slider,{left:-810*index});
+		}
+	}
+	function next(){
+		if(isMoving){
+			return;
+		}
+		isMoving = true;
+		index++;
+		navmove();
+		animate(slider,{left:-810*index},function(){
+			if(index==7){
+				slider.style.left = '-810px';
+				index = 1;
+			}
+			isMoving = false;
+		});
+	}
+	function prev(){
+		if(isMoving){
+			return;
+		}
+		isMoving = true;
+		index--;
+		navmove();
+		animate(slider,{left:-810*index},function(){
+			if(index==0){
+				slider.style.left = '-4860px';
+				index = 6;
+			}
+			isMoving = false;
+		});
+	}
+	function navmove(){
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].className = "";
+		}
+		if(index > 6 ){
+			oNavlist[0].className = "active";
+		}else if(index<=0){
+			oNavlist[5].className = "active";
+		}else {
+			oNavlist[index-1].className = "active";
+		}
+	}
+	timer = setInterval(next, 3000);
+	function getStyle(obj, attr){
+		if(obj.currentStyle){
+			return obj.currentStyle[attr];
+		} else {
+			return getComputedStyle(obj, null)[attr];
+		}
+	}
+	function animate(obj,json,callback){
+		clearInterval(obj.timer);
+		obj.timer = setInterval(function(){
+			var isStop = true;
+			for(var attr in json){
+				var now = 0;
+				if(attr == 'opacity'){
+					now = parseInt(getStyle(obj,attr)*100);
+				}else{
+					now = parseInt(getStyle(obj,attr));
+				}
+				var speed = (json[attr] - now) / 8;
+				speed = speed>0?Math.ceil(speed):Math.floor(speed);
+				var cur = now + speed;
+				if(attr == 'opacity'){
+					obj.style[attr] = cur / 100;
+				}else{
+					obj.style[attr] = cur + 'px';
+				}
+				if(json[attr] !== cur){
+					isStop = false;
+				}
+			}
+			if(isStop){
+				clearInterval(obj.timer);
+				callback&&callback();
+			}
+		}, 30)
+	}
+
+	//充值
+	var money = document.getElementById("money");
+	var mmmmmm = document.getElementById("mmmmmm");
+	money.onclick = function(){
+		mmmmmm.innerHTML = "￥" + money.value;
+	}
+	//轮播新闻
+	
+
+	timer1 = setInterval(nexttt, 30);
+	var lunbozimu = document.getElementById("lunbozimu");
+	var lunbozimuer = document.getElementById("lunbozimuer");
+	lunbozimu.onmouseover = function(){
+		clearInterval(timer1);
+	}
+	lunbozimu.onmouseout = function(){
+		timer1 = setInterval(nexttt, 30);
+	}
+	function nexttt(){
+		lunbozimuer.style.top = parseInt(getStyle(lunbozimuer,"top")) - 1 + "px";
+		if(parseInt(lunbozimuer.style.top) == -364){ 
+			lunbozimuer.style.top = 0 + 'px';
+		}
+	}
+	// setInterval(function(){
+	// 	lunbozimu.onmouseout = function(){
+	// 	lunbozimuer.style.top = parseInt(getStyle(lunbozimuer,"top")) - 1 + "px";
+	// 	if(parseInt(lunbozimuer.style.top) == -364){ 
+	// 		lunbozimuer.style.top = 0 + 'px';
+	// 	}
+	// 	timer1 = setInterval(nexttt, 30);
+	// }
+	// },10)
+	//边的悬浮
+	var b1 = document.getElementById("bian1111");
+	var b2 = document.getElementById("bian2222");
+	var b3 = document.getElementById("bian3333");
+	var b4 = document.getElementById("bian4444");
+	b1.onmouseover = function(){
+		animate(this,{right:-1});
+	}
+	b1.onmouseout = function(){
+		animate(this,{right:-80});	
+	}
+	b2.onmouseover = function(){
+		animate(this,{right:-1});
+	}
+	b2.onmouseout = function(){
+		animate(this,{right:-80});
+	}
+	b3.onmouseover = function(){
+		animate(this,{right:-1});
+		var soberwei = document.getElementById("soberwei");
+		soberwei.setAttribute("src", "image/web-8/erwei.png");
+		soberwei.setAttribute("id", "soberwei1");
+	}
+	b3.onmouseout = function(){
+		animate(this,{right:-80});
+		var soberwei1 = document.getElementById("soberwei1");
+		soberwei1.setAttribute("src", "image/web-8/serwei.png");
+		soberwei1.setAttribute("id", "soberwei");	
+	}
+	b4.onmouseover = function(){
+		animate(this,{right:-1});
+	}
+	b4.onmouseout = function(){
+		animate(this,{right:-80});
+	}
+</script>
+</html>
